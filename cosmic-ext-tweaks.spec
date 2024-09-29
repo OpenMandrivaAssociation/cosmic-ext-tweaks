@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 %define         appname dev.edfloreshz.CosmicTweaks
 Name:           cosmic-ext-tweaks
 Version:        0.1.0+git20240929
@@ -38,6 +39,6 @@ just rootdir=%{buildroot} prefix=%{_prefix} install
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/applications/%{appname}.desktop
-%{_datadir}/icons/hicolor/??x??/apps/%{appname}.svg
-%{_datadir}/icons/hicolor/???x???/apps/%{appname}.svg
+#{_datadir}/icons/hicolor/??x??/apps/%{appname}.svg
+#{_datadir}/icons/hicolor/???x???/apps/%{appname}.svg
 %{_datadir}/metainfo/%{appname}.metainfo.xml
