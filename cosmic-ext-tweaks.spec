@@ -39,6 +39,5 @@ just rootdir=%{buildroot} prefix=%{_prefix} install
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/applications/%{appname}.desktop
-#{_datadir}/icons/hicolor/??x??/apps/%{appname}.svg
-#{_datadir}/icons/hicolor/???x???/apps/%{appname}.svg
+%{_iconsdir}/hicolor/scalable/apps/dev.edfloreshz.CosmicTweaks.svg
 %{_datadir}/metainfo/%{appname}.metainfo.xml
