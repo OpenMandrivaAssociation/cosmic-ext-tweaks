@@ -40,4 +40,4 @@ just rootdir=%{buildroot} prefix=%{_prefix} install
 %{_bindir}/%{name}
 %{_datadir}/applications/%{appname}.desktop
 %{_iconsdir}/hicolor/scalable/apps/dev.edfloreshz.CosmicTweaks.svg
-%{_datadir}/metainfo/%{appname}.metainfo.xml
+#{_datadir}/metainfo/%{appname}.metainfo.xml
