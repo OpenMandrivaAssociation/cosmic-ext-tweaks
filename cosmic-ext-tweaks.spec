@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 %define         appname dev.edfloreshz.CosmicTweaks
 Name:           cosmic-ext-tweaks
-Version:        0.1.0+git20240929
-Release:        0
+Version:        0.1.3
+Release:        1
 Summary:        A tweaking tool for the COSMIC DE
 License:        GPL-3.0-only
 Group:          Utility/COSMIC
 URL:            https://github.com/edfloreshz/cosmic-tweaks
-Source0:        https://github.com/cosmic-utils/tweaks/archive/refs/heads/tweaks-main.tar.gz
+Source0:        https://github.com/cosmic-utils/tweaks/archive/refs/tags/%{version}/tweaks-%{version}.tar.gz
 Source1:        vendor.tar.xz
 Source2:        cargo_config
 
@@ -24,7 +24,7 @@ Provides:  cosmic-tweaks
 This is a tool which gives you advanced tweaking options for the Cosmic Desktop
 
 %prep
-%autosetup -n tweaks-main -a1 -p1
+%autosetup -n tweaks-%{version} -a1 -p1
 mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
